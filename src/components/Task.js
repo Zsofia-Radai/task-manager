@@ -5,7 +5,7 @@ function Task({ task, toggleTask, deleteTask, onDoubleClick }) {
   return (
     <li key={task.id}>
       <div
-        className={`task-container ${task.uiState}`}
+        className={`task-container ${task.uiState} ${task.completed ? "completed" : ""}`}
         onDoubleClick={onDoubleClick}
       >
         <div className="task">

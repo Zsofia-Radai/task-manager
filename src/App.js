@@ -148,18 +148,20 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="app">
       <div className="container">
         <h1>Task Manager</h1>
         <div className="input-container">
           <label htmlFor="task-input">Add a new task:</label>
-          <input
-            className="task-input"
-            onKeyUp={addTask}
-            placeholder="e.g. buy groceries"
-            onChange={() => setError(null)}
-          />
-          {error && <div className="error">{error}</div>}
+          <div className="input-field">
+            <input
+              className="task-input"
+              onKeyUp={addTask}
+              placeholder="e.g. buy groceries"
+              onChange={() => setError(null)}
+            />
+            {error && <div className="error">{error}</div>}
+          </div>
         </div>
         <div className="filter-options">
           {FILTERS.map((f) => (

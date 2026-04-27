@@ -1,5 +1,11 @@
-.App {
-  text-align: center;
+.app {
+  max-width: 40%;
+  margin: 60px auto;
+  padding: 24px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  background-color: #98c3cd;
 }
 
 ul {
@@ -8,10 +14,16 @@ ul {
 }
 
 .input-container {
-  margin: 40px;
+  margin: 40px 0 40px 0;
+  display: flex;
+  align-items: baseline;
   label {
     margin-right: 10px;
   }
+}
+
+.input-field {
+  display: block;
 }
 
 .task-input {
@@ -21,7 +33,6 @@ ul {
 
 .error {
   color: red;
-  margin: 10px;
 }
 
 .edit-task {
@@ -34,16 +45,26 @@ ul {
 
 .filter-options {
   display: flex;
-    div {
-      margin: 0px 5px;
-      cursor: pointer;
-      padding: 5px 5px;
-    }
-    .active {
-      background-color: #17a012;
-      color: white;
-      border-radius: 5px;
-    }
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.filter-options > div {
+  padding: 6px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.filter-options > div.active {
+  background: #17a012;
+  color: white;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: #434e4291;
 }
 
 .no-tasks {
@@ -56,11 +77,6 @@ ul {
 
 .task {
   display: flex;
-}
-
-.container {
-  width: 30%;
-  display: inline-block;
 }
 
 .container h1 {
