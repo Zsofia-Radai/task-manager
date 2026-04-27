@@ -1,0 +1,68 @@
+.App {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.input-container {
+  margin: 40px;
+  label {
+    margin-right: 10px;
+  }
+}
+
+.task-input {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.error {
+  color: red;
+  margin: 10px;
+}
+
+.edit-task {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.filter-options {
+  display: flex;
+    div {
+      margin: 0px 5px;
+      cursor: pointer;
+      padding: 5px 5px;
+    }
+    .active {
+      background-color: #17a012;
+      color: white;
+      border-radius: 5px;
+    }
+}
+
+.no-tasks {
+  text-align: left;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.task {
+  display: flex;
+}
+
+.container {
+  width: 30%;
+  display: inline-block;
+}
+
+.container h1 {
+  justify-self: left;
+}
