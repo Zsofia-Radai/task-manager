@@ -24,7 +24,10 @@ const FILTERS = [
 ];
 
 function App() {
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useState(() => {
+    const stored = localStorage.getItem("tasks");
+    return stored ? JSON.parse(stored) : [];
+  });
   const [error, setError] = useState(null);
   const [filter, setFilter] = useState("all");
 
